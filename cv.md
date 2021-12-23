@@ -7,7 +7,7 @@
 
 **Location:** Poland, Warsaw
 
-**Telephone number:** +48 (88) 309 91 90
+**Phone number:** +48 (88) 309 91 90
 
 **Email:** inki.krik@gmail.com
 
