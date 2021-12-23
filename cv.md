@@ -53,3 +53,8 @@ const SquareSumOfSquares = (c, d) => {
 ===============================================
 
 
+##Languages##
+
++ Russian: Native
++ Polish: A2+
++ English: A2+
