@@ -21,19 +21,50 @@
    </header>
    <main> 
       <section>
-         <header><h1>Inna Kobiak</h1></header>
-         <div class="about-me">
+         <header class="wrap-header">
+            <div class="content-header">
+             <h1 class="title-header">Inna Kobiak</h1>
+             <Junior class="text">Junior Front-End Developer</p>
+            </div>
+         </header>
+         <div class="category-section">
+            <div class="content-main">
             <h2>About me</h2>
             <p>I've got very good soft skills, and I'm excellent team worker. 
                I hope, that I will be fantastic Front-End Developer, when I finish my course at Rolling Scope School.</p>
+            </div>
          </div>
-         <div class="skills">
-            <h2>Skills</h2> <!--Add skills-->
+         <div class="category-section">
+            <h2>Skills</h2> 
+            <ul>
+               <li>HTML 4/5</li>
+               <li>CSS 3/4</li>
+               <li>JS 2/5</li>
+               <li>GIT 3/5</li>
+               <li>Figma 4/5</li>
+               <li>Photoshop 4/5</li>
+            </ul>
          </div>
-         <div class="my-code">
-            <h2>My code</h2> <!--Add code-->
+         <div class="category-section">
+            <h2>My code</h2>
+            <pre>
+               const Square = (num) => {
+                  const result = num*num;
+                  return result;
+               }
+               
+               const SumOfSquares = (a, b) => {
+                  const result2 = Square(a) + Square(b);
+                  return result2;
+               }
+               
+               const SquareSumOfSquares = (c, d) => {
+                  const result3 = Square(SumOfSquares(c,d));
+                  return result3;
+               }
+            </pre>
          </div>
-         <div class="education">
+         <div class="category-section">
             <h2>Education and courses</h2>
             <ul>
                <li>Introduction to programming (Language Java Script) on the Hexlet course</li>
@@ -42,19 +73,46 @@
                <li>Git video courses on YouTube channel</li>
             </ul>
          </div>
-         <div class="contacts"> <!--remake contacts-->
-            <h2>Contacts</h2> 
-            <pre>**Location:** Poland, Warsaw
-
-               **Phone number:** +48 (88) 309 91 90
-               
-               **Email:** inki.krik@gmail.com
-               
-               **GitHub:** https://github.com/Inkinki </pre>
+         <div class="category-section">
+            <div class="content"> 
+            <h2 class="title">Contacts</h2> 
+            <ul class="list">
+               <li>Location:Poland, Warsaw</li>
+               <li>+48 (88) 309 91 90</li>              
+               <li>inki.krik@gmail.com</li> 
+              <li><a href="https://github.com/Inkinki">https://github.com/Inkinki</a></li> 
+            </ul>
+            </div> 
          </div>
 
       </section>
-      <aside></aside> <!--add Languages and rest-->
+      <aside>
+         <div class="category-aside">
+            <title>Languages</title>
+            <ul class="list">
+               <li>Russian: Native</li>
+               <li>Polish: A2+</li>
+               <li>English: A2+</li>
+            </ul>
+         </div>
+         <div class="category-aside">
+            <title>SOFT SKILLS</title>
+            <ul>
+               <li>Responsibility</li>
+               <li>Collaboration</li>
+               <li>Sociability</li>
+               <li>Self-organization</li>
+            </ul>
+         </div>
+         <div class="category-aside">
+            <title>HOBBIES</title>
+            <ul>
+               <li>Politic news</li>
+               <li>Articles about IT</li>
+               <li>Music</li>
+            </ul>
+         </div>
+      </aside> 
    </main>
    <footer></footer>
 </body>
