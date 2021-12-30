@@ -7,20 +7,25 @@
    <title>CV</title>
    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-   <header class="header"> <!--Add link to items & add finished projects-->
-      <nav class="header-nav">
-         <ul class="list-nav">
-            <li class="nav-item">About me</li>
-            <li class="nav-item">Skills</li> 
-            <li class="nav-item">My code</li>
-            <li class="nav-item">Education and courses</li> 
-            <li class="nav-item">Contacts</li>
-         </ul>
-      </nav>
-   </header>
+<body class="body">
+   <header class="header"> 
+      <div class="container">
+         <nav class="nav">
+            <ul class="nav-list">
+               <li class="nav-item"><a href="#about-me" class="nav-link">About me</a></li>
+               <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li> 
+               <li class="nav-item"><a href="#my-code" class="nav-link">My code</a></li>
+               <li class="nav-item"><a href="#education" class="nav-link">Education</a></li> 
+               <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+               <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+               <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li> 
+               <li class="nav-item"><a href="#hobbies" class="nav-link">Hobbies</a></li>
+            </ul>
+         </nav>
+      </div>   </header>
    <main class="main"> 
-      <section class="section">
+      <div class="container">
+       <section class="section">
          <header class="section-header"> 
             <div class="section-header-wrapper">
                <figure class="avatar">
@@ -33,69 +38,70 @@
             </div>
          </header>
          <div class="section-main-content">
-          <div class="section-category">
+            <div class="section-category">
              <div class="sec-cat-content">
-                <h2 class="sec-cat-title">About me</h2>
+                <h2 class="sec-cat-title" id="about-me">About me</h2>
                 <p class="sec-cat-text">I've got very good soft skills, and I'm excellent team worker. 
                I hope, that I will be fantastic Front-End Developer, when I finish my course at Rolling Scope School.</p>
              </div>
-          </div>
-          <div class="section-category">
-            <div class="sec-cat-content">
-               <h2 class="sec-cat-title">Education and courses</h2>
-               <div class="sec-cat-text">
-                  <ul class="sec-cat-list-mark">
-                     <li class="ul-item">Introduction to programming (Language Java Script) on the Hexlet course</li>
-                     <li class="ul-item">Code basic: HTML</li>
-                     <li class="ul-item">Code basic: CSS</li>
-                     <li class="ul-item">Git video courses on YouTube channel</li>
-                  </ul>
+            </div>
+            <div class="section-category">
+                  <div class="sec-cat-content">
+                     <h2 class="sec-cat-title" id="education">Education and courses</h2>
+                     <div class="sec-cat-text">
+                        <ul class="sec-cat-list-mark">
+                           <li class="ul-item">Introduction to programming (Language Java Script) on the Hexlet course</li>
+                           <li class="ul-item">Code basic: HTML</li>
+                           <li class="ul-item">Code basic: CSS</li>
+                           <li class="ul-item">Git video courses on YouTube channel</li>
+                        </ul>
+                     </div>
+                  </div>
+            </div>
+            <div class="section-category">
+               <div class="sec-cat-content">
+                  <h2 class="sec-cat-title" id="my-code">My code</h2>
+                  <pre class="snippet">
+                        const Square = (num) => {
+                           const result = num*num;
+                           return result;
+                        }
+               
+                         const SumOfSquares = (a, b) => {
+                         const result2 = Square(a) + Square(b);
+                         return result2;
+                        }
+               
+                        const SquareSumOfSquares = (c, d) => {
+                           const result3 = Square(SumOfSquares(c,d));
+                           return result3;
+                        }
+                  </pre>
                </div>
             </div>
-          </div>
-          <div class="section-category">
+            <div class="section-category">
             <div class="sec-cat-content">
-               <h2 class="sec-cat-title">My code</h2>
-               <pre class="snippet">
-                  const Square = (num) => {
-                     const result = num*num;
-                     return result;
-                   }
-               
-                  const SumOfSquares = (a, b) => {
-                     const result2 = Square(a) + Square(b);
-                     return result2;
-                  }
-               
-                  const SquareSumOfSquares = (c, d) => {
-                     const result3 = Square(SumOfSquares(c,d));
-                     return result3;
-                  }
-               </pre>
-            </div>
-          </div>
-          <div class="section-category">
-            <div class="sec-cat-content">
-               <h2 class="sec-cat-title">My finished projects</h2>
+               <h2 class="sec-cat-title" id="projects">My projects</h2>
                <a href="https://inkinki.github.io/rsschool-cv/cv">GitHub Pages(deploy)</a>
                <a href="https://github.com/Inkinki/rsschool-cv/blob/gh-pages/cv.md?plain=1">Source</a>
             </div>
-          </div>
-          <div class="section-category">
-            <div class="section-cat-content">
-               <h3 class="sec-cat-title">HOBBIES</h3>
-               <ul class="sec-categ-list">
-                  <li class="sec-categ-l-item">Politic news</li>
-                  <li class="sec-categ-l-item">Articles about IT</li>
-                  <li class="sec-categ-l-item">Music</li>
-               </ul>
+            </div>
+            <div class="section-category">
+               <div class="section-cat-content">
+                  <h3 class="sec-cat-title" id="hobbies">Hobbies</h3>
+                  <ul class="sec-categ-list">
+                     <li class="sec-categ-l-item">Politic news</li>
+                     <li class="sec-categ-l-item">Articles about IT</li>
+                     <li class="sec-categ-l-item">Music</li>
+                </ul>
+               </div>
             </div>
          </div>
-      </section>
-      <aside>
+       </section>
+       <aside class="aside">
          <div class="aside-category">
             <div class="as-cat-content"> 
-               <h2 class="as-cat-title">CONTACTS</h2> 
+               <h2 class="as-cat-title" id="contacts">CONTACTS</h2> 
                <div class="as-cat-text">
                   <ul class="list">
                      <li class="li">Location:Poland, Warsaw</li>
@@ -105,11 +111,10 @@
                   </ul>
                </div>
             </div> 
-          </div>
          </div>
          <div class="aside-category">
             <div class="as-cat-content">
-             <h2 class="as-cat-title">SKILLS</h2> 
+             <h2 class="as-cat-title" id="skills">SKILLS</h2> 
              <div class="as-cat-text">
                   <ul class="as-cat-list-dots">
                      <li class="list-item">HTML 4/5</li>
@@ -124,7 +129,7 @@
           </div>
          <div class="aside-category">
             <div class="as-cat-content">
-               <h3 class="as-cat-title">LANGUAGES</h3>
+               <h3 class="as-cat-title" id="languages">LANGUAGES</h3>
                   <ul class="as-cat-list">
                      <li class="as-cat-l-item">Russian: Native</li>
                      <li class="as-cat-l-item">Polish: A2+</li>
@@ -132,26 +137,18 @@
                   </ul>
             </div>
          </div>
-         <div class="aside-category">
-            <div class="as-cat-content">
-               <h3 class="as-cat-title">SOFT SKILLS</h3>
-               <ul class="as-categ-list">
-                  <li class="as-categ-l-item">Responsibility</li>
-                  <li class="as-categ-l-item">Collaboration</li>
-                  <li class="as-categ-l-item">Sociability</li>
-                  <li class="as-categ-l-item">Self-organization</li>
-               </ul>
-            </div>
-         </div>
-      </aside> 
+       </aside> 
+      </div>
    </main>
    <footer class="footer">
-      <a href="https://github.com/Inkinki">My GitHub</a>
-      <p>2021</p>
-      <div class="logo-link">
-         <figure><img src="./assets/img/rs_school_js.svg"></figure>
-         <a href="https://rs.school/js/">Rolling Scope School</a>
-      </div>
+      <div class="container">
+         <a href="https://github.com/Inkinki">My GitHub</a>
+         <p>2021</p>
+         <div class="logo-link">
+            <figure><img src="./assets/img/rs_school_js.svg"></figure>
+            <a href="https://rs.school/js/">Rolling Scope School</a>
+         </div>
+         </div>
    </footer>
 </body>
 </html>
