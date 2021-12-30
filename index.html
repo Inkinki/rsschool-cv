@@ -4,113 +4,137 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>CV</title>
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <header>
-      <nav>
-         <ul>
-            <li>About be</li>
-            <li>Skills</li> <!--to this section add Languages-->
-            <li>My code</li>
-            <li>Education and courses</li> <!--Here add I already did it(finished project)-->
-            <li>Contacts</li>
+   <header class="header">
+      <nav class="header-nav">
+         <ul class="list-nav">
+            <li class="nav-item">About me</li>
+            <li class="nav-item">Skills</li> 
+            <li class="nav-item">My code</li>
+            <li class="nav-item">Education and courses</li> <!--Here add I already did it(finished project)-->
+            <li class="nav-item">Contacts</li>
          </ul>
       </nav>
    </header>
    <main> 
       <section>
-         <header class="wrap-header">
-            <div class="content-header">
-             <h1 class="title-header">Inna Kobiak</h1>
-             <Junior class="text">Junior Front-End Developer</p>
+         <header class="section-header"> 
+            <div class="section-header-wrapper">
+               <figure class="avatar">
+                  <img src="photo-cv-2.jpg" alt="Photo">
+               </figure>
+               <div class="section-header-content">
+                  <h1 class="title">Inna Kobiak</h1>
+                  <p class="text">Junior Front-End Developer</p>
+               </div>
             </div>
          </header>
-         <div class="category-section">
-            <div class="content-main">
-            <h2>About me</h2>
-            <p>I've got very good soft skills, and I'm excellent team worker. 
+         <div class="section-main-content">
+          <div class="section-category">
+             <div class="sec-cat-content">
+                <h2 class="sec-cat-title">About me</h2>
+                <p class="sec-cat-text">I've got very good soft skills, and I'm excellent team worker. 
                I hope, that I will be fantastic Front-End Developer, when I finish my course at Rolling Scope School.</p>
+             </div>
+          </div>
+          <div class="section-category">
+            <div class="sec-cat-content">
+             <h2 class="sec-cat-title">Skills</h2> 
+             <div class="sec-cat-text">
+              <ul class="sec-cat-list-dots">
+                <li class="list-item">HTML 4/5</li>
+                <li class="list-item">CSS 3/4</li>
+                <li class="list-item">JS 2/5</li>
+                <li class="list-item">GIT 3/5</li>
+                <li class="list-item">Figma 4/5</li>
+                <li class="list-item">Photoshop 4/5</li>
+               </ul>
+             </div>
             </div>
-         </div>
-         <div class="category-section">
-            <h2>Skills</h2> 
-            <ul>
-               <li>HTML 4/5</li>
-               <li>CSS 3/4</li>
-               <li>JS 2/5</li>
-               <li>GIT 3/5</li>
-               <li>Figma 4/5</li>
-               <li>Photoshop 4/5</li>
-            </ul>
-         </div>
-         <div class="category-section">
-            <h2>My code</h2>
-            <pre>
-               const Square = (num) => {
-                  const result = num*num;
-                  return result;
-               }
+          </div>
+          <div class="section-category">
+            <div class="sec-cat-content">
+               <h2 class="sec-cat-title">My code</h2>
+               <pre class="sec-cat-code">
+                  const Square = (num) => {
+                     const result = num*num;
+                     return result;
+                   }
                
-               const SumOfSquares = (a, b) => {
-                  const result2 = Square(a) + Square(b);
-                  return result2;
-               }
+                  const SumOfSquares = (a, b) => {
+                     const result2 = Square(a) + Square(b);
+                     return result2;
+                  }
                
-               const SquareSumOfSquares = (c, d) => {
-                  const result3 = Square(SumOfSquares(c,d));
-                  return result3;
-               }
-            </pre>
-         </div>
-         <div class="category-section">
-            <h2>Education and courses</h2>
-            <ul>
-               <li>Introduction to programming (Language Java Script) on the Hexlet course</li>
-               <li>Code basic: HTML</li>
-               <li>Code basic: CSS</li>
-               <li>Git video courses on YouTube channel</li>
-            </ul>
-         </div>
-         <div class="category-section">
-            <div class="content"> 
-            <h2 class="title">Contacts</h2> 
-            <ul class="list">
-               <li>Location:Poland, Warsaw</li>
-               <li>+48 (88) 309 91 90</li>              
-               <li>inki.krik@gmail.com</li> 
-              <li><a href="https://github.com/Inkinki">https://github.com/Inkinki</a></li> 
-            </ul>
+                  const SquareSumOfSquares = (c, d) => {
+                     const result3 = Square(SumOfSquares(c,d));
+                     return result3;
+                  }
+               </pre>
+            </div>
+          </div>
+          <div class="section-category">
+            <div class="sec-cat-content">
+               <h2 class="sec-cat-title">Education and courses</h2>
+               <div class="sec-cat-text">
+                  <ul class="sec-cat-list-mark">
+                     <li class="ul-item">Introduction to programming (Language Java Script) on the Hexlet course</li>
+                     <li class="ul-item">Code basic: HTML</li>
+                     <li class="ul-item">Code basic: CSS</li>
+                     <li class="ul-item">Git video courses on YouTube channel</li>
+                  </ul>
+               </div>
+            </div>
+          </div>
+          <div class="section-category">
+            <div class="sec-cat-content"> 
+               <h2 class="sec-cat-title">Contacts</h2> 
+               <div class="sec-cat-text">
+                  <ul class="list">
+                     <li>Location:Poland, Warsaw</li>
+                     <li>+48 (88) 309 91 90</li>              
+                     <li>inki.krik@gmail.com</li> 
+                     <li><a href="https://github.com/Inkinki">https://github.com/Inkinki</a></li> 
+                  </ul>
+               </div>
             </div> 
+          </div>
          </div>
-
       </section>
       <aside>
-         <div class="category-aside">
-            <title>Languages</title>
-            <ul class="list">
-               <li>Russian: Native</li>
-               <li>Polish: A2+</li>
-               <li>English: A2+</li>
-            </ul>
+         <div class="aside-category">
+            <div class="as-cat-content">
+               <h3 class="as-cat-title">LANGUAGES</h3>
+                  <ul class="as-cat-list">
+                     <li class="as-cat-l-item">Russian: Native</li>
+                     <li class="as-cat-l-item">Polish: A2+</li>
+                     <li class="as-cat-l-item">English: A2+</li>
+                  </ul>
+            </div>
          </div>
-         <div class="category-aside">
-            <title>SOFT SKILLS</title>
-            <ul>
-               <li>Responsibility</li>
-               <li>Collaboration</li>
-               <li>Sociability</li>
-               <li>Self-organization</li>
-            </ul>
+         <div class="aside-category">
+            <div class="as-cat-content">
+               <h3 class="as-cat-title">SOFT SKILLS</h3>
+               <ul class="as-categ-list">
+                  <li class="as-categ-l-item">Responsibility</li>
+                  <li class="as-categ-l-item">Collaboration</li>
+                  <li class="as-categ-l-item">Sociability</li>
+                  <li class="as-categ-l-item">Self-organization</li>
+               </ul>
+            </div>
          </div>
-         <div class="category-aside">
-            <title>HOBBIES</title>
-            <ul>
-               <li>Politic news</li>
-               <li>Articles about IT</li>
-               <li>Music</li>
-            </ul>
+         <div class="aside-category">
+            <div class="as-cat-content">
+               <h3 class="as-cat-title">HOBBIES</h3>
+               <ul class="aside-categ-list">
+                  <li class="aside-categ-l-item">Politic news</li>
+                  <li class="aside-categ-l-item">Articles about IT</li>
+                  <li class="aside-categ-l-item">Music</li>
+               </ul>
+            </div>
          </div>
       </aside> 
    </main>
