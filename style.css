@@ -14,14 +14,17 @@
 /* ----------------------------------- */
 
 /* add border temporarily */
-.body {border: 1px solid red;}
+body {border: 1px solid red;}
 .footer {border: 1px solid red;}
-.mean {border: 1px solid red;}
+main {border: 1px solid red;}
 .section {border: 1px solid red;}
 .aside {border: 1px solid red;}
+/* .title {border: 1px solid red;}
+.text {border: 1px solid red;} 
+.aside-header-wrapper {border: 1px solid red;}  */
 /* -------------------------------------- */
 
-html {scroll-behavior: smooth; }
+html {scroll-behavior: smooth;}
 
 @font-face {
    font-family: 'OpenSans';
@@ -51,6 +54,8 @@ html {scroll-behavior: smooth; }
 
 
 /* Header */
+
+
 .nav-list {
    display: flex;
    justify-content: space-between;
@@ -73,3 +78,42 @@ a:hover {
 }
 /* ---------------------------------------- */
 
+
+/* MAIN */
+.wrapper {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+
+.aside {width:20%}
+.section {width: 80%;}
+
+
+/* HEADER */
+
+.avatar {
+   width: 195px;
+   height: 255px;
+}
+
+.aside-header-wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-family: OpenSans;
+   ;
+   color: #000;
+   margin-bottom: 10px;
+
+}
+
+.title {
+   font-size: 36px;
+}
+.text {
+   font-weight: 100;
+   font-size: 24px;
+   margin-top: -10px; 
+   text-align: center;
+}
