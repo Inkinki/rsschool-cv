@@ -16,13 +16,7 @@
 /* add border temporarily */
 body {border: 1px solid red;}
 .footer {border: 1px solid red;}
-main {border: 1px solid red;}
-.section {border: 1px solid red;}
-.aside {border: 1px solid red;}
-/* .title {border: 1px solid red;}
-.text {border: 1px solid red;} 
-.aside-header-wrapper {border: 1px solid red;}  */
-/* -------------------------------------- */
+
 
 html {scroll-behavior: smooth;}
 
@@ -221,3 +215,50 @@ a:hover {
 
 
 /* ----------- */
+
+
+/* SECTION */
+
+.section {
+   font-family: OpenSans;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   border-left: 2px solid #000;
+}
+
+.section-category {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin-bottom: 70px;
+}
+
+.sec-cat-title {
+   margin-top: 5px;
+   margin-bottom: 30px;
+   font-weight: 300;
+   color: #fff;
+   background-color: #000;
+}
+
+.sec-cat-text {
+   margin: 0;
+   margin-left: 15px;;
+   max-height: max-content;
+   line-height: 40px;
+   color: #3f4240;
+   font-size: 18px;
+}
+
+.sec-cat-list-mark {
+   list-style-type: none;
+   margin: 0;
+   margin-left: -40px;
+}
+
+pre {
+   font-size: 15px;
+   background-color: rgba(104, 109, 107, 0.1);
+   /* border: 1px solid red; */
+}
