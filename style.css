@@ -1,0 +1,288 @@
+/* Обнуление */
+/* * {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+} */
+/* --------------------------------- */
+
+/* box-sizing for all */
+*{box-sizing: border-box;}
+/* ----------------------------------- */
+
+
+
+
+html {scroll-behavior: smooth;}
+
+@font-face {
+   font-family: 'OpenSans';
+   src: url("assets/font/OpenSans-Regular.ttf");
+   font-weight: 100;
+ }
+ 
+ @font-face {
+   font-family: 'OpenSans';
+   src: url("assets/font/OpenSans-SemiBold.ttf");
+   font-weight: 300;
+ }
+ 
+
+.body {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   min-width: 100vh;
+   margin: 0;
+}
+
+.container{
+   max-width: 1440px;
+   margin: 0 auto;
+}
+
+
+/* Header */
+
+
+.nav-list {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   list-style-type: none;
+}
+
+.nav-link {
+   padding: 0 20px;
+   line-height:  50px;
+   text-decoration: none;
+   font-size: 18px;
+   font-family: OpenSans;
+   color: #686d6b;
+   transition: 0.3s;
+}
+
+a:hover {
+   color: #000;
+}
+/* ------------------------ */
+
+
+/* ASIDE */
+.wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   max-width: content;
+}
+
+
+.aside {width:20%}
+.section {width: 80%;}
+
+
+            /* header aside */
+
+.avatar {
+   width: 195px;
+   height: 255px;
+}
+
+.aside-header-wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-family: OpenSans;
+   color: #000;
+   margin-bottom: 100px;
+
+}
+
+
+.link {
+   text-decoration: none;
+   color: #686d6b;
+   transition: 0.3s;
+}
+
+.link :hover {
+   color: #000;
+}
+
+.title {
+   font-size: 36px;
+   text-align: center;
+}
+.text {
+   font-weight: 100;
+   font-size: 24px;
+   margin-top: -10px; 
+   text-align: center;
+}
+
+            /* ----------- */
+
+
+     /* Main content ASIDE        */
+
+
+.aside-category{
+   font-family: OpenSans;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   max-width: content;
+}
+
+
+
+.as-cat-content{
+   font-family: OpenSans;
+   margin-bottom: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   max-width: content;
+   max-height: content;
+}
+
+.as-cat-title {
+   text-align: center;
+   margin: 0;
+   margin-bottom: 30px;
+}
+
+
+.list-dots {
+   display: flex;
+   align-items: flex-start;
+   max-height: content;
+   margin: 0;
+}
+
+.list {
+   color: #3f4240;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   list-style-type: none;
+   max-width: content;
+   margin: 0;
+   margin-left: -40px;
+}
+
+.list-item {
+   margin: 0;
+   margin-right: 15px;
+   margin-bottom: 15px;
+   display: flex;
+   align-items: center;
+   height: 26px;
+   max-width: content;
+}
+
+.dots {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   list-style-type: none;
+   max-width: content;
+   margin: 0;
+}
+
+.line {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   height: 26px;
+   margin: 0;
+   margin-bottom: 15px;
+   display: flex;
+   align-items: center;
+   max-height: content;
+   max-width: content;
+}
+
+
+.dot {
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+   margin-right: 5px;
+   background-color: #a8acaa;
+}
+
+.dot-light {
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+   margin-right: 5px;
+   background-color: #d4d6d5;
+}
+
+
+/* ----------- */
+
+
+/* SECTION */
+
+.section {
+   font-family: OpenSans;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   border-left: 2px solid #000;
+}
+
+.section-category {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin-bottom: 80px;
+}
+
+.sec-cat-title {
+   margin-top: 0px;
+   margin-bottom: 30px;
+   font-weight: 300;
+   color: #fff;
+   background-color: #000;
+}
+
+.sec-cat-text {
+   margin: 0;
+   margin-left: 15px;;
+   max-height: max-content;
+   line-height: 40px;
+   color: #3f4240;
+   font-size: 18px;
+}
+
+.sec-cat-list-mark {
+   list-style-type: none;
+   margin: 0;
+   margin-left: -40px;
+}
+
+pre {
+   font-size: 15px;
+   background-color: rgba(104, 109, 107, 0.1);
+}
+
+/* FOOOTEEEER */
+
+.footer {
+   font-family: OpenSans;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   border-top: 2px solid #3f4240;
+}
+
+.logo {
+   height: 47px;
+   width: 126px;
+}
