@@ -83,6 +83,7 @@ a:hover {
 .wrapper {
    display: flex;
    flex-wrap: wrap;
+   max-width: content;
 }
 
 
@@ -102,14 +103,14 @@ a:hover {
    flex-direction: column;
    align-items: center;
    font-family: OpenSans;
-   ;
    color: #000;
-   margin-bottom: 10px;
+   margin-bottom: 100px;
 
 }
 
 .title {
    font-size: 36px;
+   text-align: center;
 }
 .text {
    font-weight: 100;
@@ -126,57 +127,97 @@ a:hover {
 
 .aside-category{
    font-family: OpenSans;
-   display:flex;
+   display: flex;
    flex-direction: column;
-   align-content: center;
+   align-items: center;
+   max-width: content;
 }
+
+
 
 .as-cat-content{
    font-family: OpenSans;
-   display:flex;
-   flex-direction: column;
-   align-content: center;
-   margin: 25px 5px;
-}
-
-.as-cat-title{text-align: center;}
-
-.list {
-   list-style-type: none;
-   margin-top: 0;
-}
-
-.as-cat-text {
-   margin-bottom: 0;
+   margin-bottom: 50px;
    display: flex;
    flex-direction: column;
-   align-content: center;
    align-items: center;
-   border: 1px solid red;
+   max-width: content;
+   max-height: content;
 }
+
+.as-cat-title {
+   text-align: center;
+   margin: 0;
+   margin-bottom: 30px;
+}
+
+
+.list-dots {
+   display: flex;
+   align-items: flex-start;
+   max-height: content;
+   margin: 0;
+}
+
+.list {
+   color: #3f4240;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   list-style-type: none;
+   max-width: content;
+   margin: 0;
+   margin-left: -40px;
+}
+
+.list-item {
+   margin: 0;
+   margin-right: 15px;
+   margin-bottom: 15px;
+   display: flex;
+   align-items: center;
+   height: 26px;
+   max-width: content;
+}
+
+.dots {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   list-style-type: none;
+   max-width: content;
+   margin: 0;
+}
+
+.line {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   height: 26px;
+   margin: 0;
+   margin-bottom: 15px;
+   display: flex;
+   align-items: center;
+   max-height: content;
+   max-width: content;
+}
+
 
 .dot {
    width: 15px;
    height: 15px;
    border-radius: 50%;
-   background-color: #686d6b;
+   margin-right: 5px;
+   background-color: #a8acaa;
+}
+
+.dot-light {
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+   margin-right: 5px;
+   background-color: #d4d6d5;
 }
 
 
-.line {
-   display: flex;
-   flex-direction: row;
-   border: 1px solid red;
-}
-
-
-
-.list-item {
-   display: flex;
-}
-
-.text-list {
-   margin-right: 15px;
-   border: 1px solid red;
-}
 /* ----------- */
