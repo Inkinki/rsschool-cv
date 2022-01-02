@@ -1,4 +1,4 @@
-![Photo-cv](/photo-cv.jpg)
+![Photo-cv](photo-cv.jpg)
 
 # Inna Kabiak  
 
