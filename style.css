@@ -102,6 +102,17 @@ a:hover {
 
 }
 
+
+.link {
+   text-decoration: none;
+   color: #686d6b;
+   transition: 0.3s;
+}
+
+.link :hover {
+   color: #000;
+}
+
 .title {
    font-size: 36px;
    text-align: center;
@@ -235,7 +246,7 @@ a:hover {
 }
 
 .sec-cat-title {
-   margin-top: 5px;
+   margin-top: 0px;
    margin-bottom: 30px;
    font-weight: 300;
    color: #fff;
